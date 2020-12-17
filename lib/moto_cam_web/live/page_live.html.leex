@@ -1,0 +1,13 @@
+<section>
+  <ul>
+    <%= for movement <- @movements do %>
+    <li>
+      <%= movement.occured_at %>
+      <ul>
+        <li>type: <%= movement.type %></li>
+        <li># of degrees: <%= movement.num_degrees %></li>
+      </ul>
+    </li>
+    <% end %>
+  </ul>
+</section>
